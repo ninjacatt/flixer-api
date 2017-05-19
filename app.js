@@ -5,12 +5,14 @@ const logger = require('morgan');
 const app = express();
 const index = require('./routes/index');
 const movies = require('./routes/movies');
+const task = require('./tasks/getMovies');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
 
 app.use('/', index);
 //app.use('/movies', movies);
+task.getMoviesTask();
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
