@@ -4,7 +4,9 @@
   "description": "flixer api",
   "main": "app.js",
   "dependencies": {
+    "assert": "^1.4.1",
     "babel-eslint": "^7.2.3",
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.2",
     "compression": "^1.6.2",
     "eslint": "^3.19.0",
@@ -13,8 +15,12 @@
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.0.1",
     "express": "^4.15.3",
+    "express-validator": "^3.2.0",
+    "mongoose": "^4.10.1",
     "morgan": "^1.8.1",
-    "node-schedule": "^1.2.1"
+    "node-schedule": "^1.2.1",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^11.2.0",
